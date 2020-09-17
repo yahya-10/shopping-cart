@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+}
+header {
+    border-bottom: 2px solid #F2EA02;
+    height: 150px;
+    align-content: center;
+    
+}
+ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+li a {
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+h2 {
+    color: #F2EA02;
+    line-height: 75px;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 50px;
+}
+a {
+    font-family: 'Rajdhani', sans-serif;
+    color: gray; 
+    font-size: 20px;
+    transition: ease; 
+}
+a:hover {
+    color: #F2EA02;
+}
+.container {
+    margin: 50px 100px;
+}
+
+.product-cells {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.box {
+    width: 280px;
+    height: 350px;
+    vertical-align: middle;
+    transition: .4s;
+}
+
+img {
+    height: 240px;
+    width: 240px;
+    margin: 15px 0;
+    text-align: center;
+}
+
+h3,h4 {
+    font-family: 'Rajdhani', sans-serif;
+    color: gray;
+    transition: .4s;   
+}
+.btn {
+    display: flex;
+    width: 100%;
+}
+.Add {
+    padding: 4px 8px;
+    font-family: 'Rajdhani', sans-serif;
+    text-transform: uppercase;
+    background: none;
+    color: #1ba1f5;
+    border: none;
+    cursor: pointer;
+}
+.Add:hover {
+    color: black;
+    background: #1ba1f5;
+}
+.plus-btn,.minus-btn {
+    background-color: #1ba1f5;
+    padding: 2px;
+    border: none;
+    outline: none;
+}
+
+.cart-box {
+    display: block;
+    float: right;
+    margin: 0 50px 100px 0;
+}
+.cart-font {
+    color: #e1faf0;
+    font-size: 50px;
+}
+input {
+    width: 30px;
+    font-family: 'Rajdhani', sans-serif;
+    background-color: black;
+    border: none;
+    color: rgb(155, 153, 153);
+    font-size: 15px;
+}
+.btn-danger {
+    border-radius: 4px;
+    padding: 6px 8px;
+    background: none;
+    border: black;
+}
+
+#items {
+    display: block;
+    font-family: 'Rajdhani', sans-serif;
+    color: gray;
+    list-style: none;
+    padding: 10px;
+    cursor: pointer;
+}
+.like-btn {
+    background-color: #42f5b0;
+    border: 1px solid #42f5b0;
+    outline: none;
+}
+
+
