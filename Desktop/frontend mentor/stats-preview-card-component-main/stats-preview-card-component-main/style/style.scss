@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(233, 47%, 7%);
+  color: #fff;
+  .card {
+    display: flex;
+    flex-direction: row;
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 10px;
+    height: 60%;
+    overflow: hidden;
+    .content-box {
+      font-size: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 50%;
+      padding: 40px;
+      .stats-grid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+      }
+    }
+    .img-box {
+      width: 50%;
+      .mobile-img {
+        display: none;
+      }
+      .desktop-img {
+        width: 100%;
+      }
+    }
+  }
+}
+h1 {
+  font-family: "Inter";
+  color: hsl(0, 0%, 100%);
+}
+h1 span {
+  color: hsl(277, 64%, 61%);
+}
+p {
+  font-family: "Lexend Deca";
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.25rem;
+}
+strong {
+  color: hsl(0, 0%, 100%);
+  font-family: "Inter";
+}
+.stats {
+  margin-top: 3px;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+@media screen and (max-device-width: 375px) {
+  .container {
+    height: 100vh;
+    width: 100vw;
+    background: hsl(233, 47%, 7%);
+    .card {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      background-color: hsl(244, 38%, 16%);
+      overflow: scroll;
+      height: 80%;
+      .content-box {
+        margin-top: 30px;
+        width: 80%;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        padding: 0;
+        .stats-grid {
+          padding: 10px;
+          grid-template-columns: auto;
+          grid-template-rows: 1fr, 1fr, 1fr;
+          .upper-stats {
+            padding: 10px;
+          }
+        }
+      }
+      .content-box > p {
+        text-align: justify;
+      }
+      .img-box {
+        width: 100%;
+        .mobile-img {
+          display: block;
+          width: 100%;
+          height: auto;
+        }
+        .desktop-img {
+          display: none;
+        }
+      }
+    }
+  }
+}
